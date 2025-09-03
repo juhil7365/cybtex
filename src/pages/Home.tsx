@@ -12,7 +12,12 @@ import {
   CheckCircleIcon,
   PlayIcon
 } from '@heroicons/react/24/outline';
-import heroBg from '../assets/hero-bg.svg';
+import heroBg from '../assets/High-Tech Cybersecurity Office Scene.png';
+import cybersecurityImage from '../assets/Cybersecurity & Compliance Design.png';
+import techImage1 from '../assets/ChatGPT Image Aug 23, 2025, 02_54_12 PM.png';
+import techImage2 from '../assets/ChatGPT Image Aug 23, 2025, 02_57_13 PM.png';
+import techImage3 from '../assets/ChatGPT Image Aug 23, 2025, 02_58_33 PM.png';
+import techImage4 from '../assets/ChatGPT Image Aug 23, 2025, 03_15_40 PM.png';
 
 const Home: React.FC = () => {
   const services = [
@@ -79,8 +84,7 @@ const Home: React.FC = () => {
   ];
 
   const whyChooseUs = [
-    { title: '20+ Years Expertise', description: 'Decades of experience in enterprise IT and cybersecurity' },
-    { title: 'Proven Success', description: 'Track record with government and enterprise clients' },
+    { title: 'Highly Experienced Senior Staff', description: 'Decades of experience in enterprise IT and cybersecurity' },
     { title: 'Flexible Engagement', description: 'Custom solutions tailored to your specific needs' },
     { title: 'Certified Experts', description: 'Team of certified professionals across all major platforms' }
   ];
@@ -91,7 +95,15 @@ const Home: React.FC = () => {
       <section className="relative text-white overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroBg} alt="Cybersecurity Background" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-black opacity-40"></div>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+          
+          {/* Background text overlay */}
+          <div className="absolute top-20 right-20 text-white/20 text-8xl font-bold rotate-12">
+            SECURE
+          </div>
+          <div className="absolute bottom-20 right-32 text-white/20 text-6xl font-bold -rotate-12">
+            MODERN
+          </div>
         </div>
         <div className="relative container-custom section-padding">
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
@@ -157,7 +169,7 @@ const Home: React.FC = () => {
                 Trusted by Leading Organizations
               </h2>
               <p className="text-lg text-secondary-600 mb-8 leading-relaxed">
-                With over 20 years of experience, Cybtex Solutions empowers organizations in government, finance, healthcare, and beyond to modernize infrastructure, safeguard data, and maximize operational efficiency delivering every project on time and within budget.
+                Our leadership has over 20+ years of industry experience. Cybtex Solutions empowers organizations in government, finance, healthcare, and beyond to modernize infrastructure, safeguard data, and maximize operational efficiency delivering every project on time and within budget.
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {trustSignals.map((signal) => (
@@ -168,18 +180,42 @@ const Home: React.FC = () => {
                 ))}
               </div>
             </div>
-            <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-secondary-900 mb-6">Why Choose Cybtex?</h3>
-              <div className="space-y-4">
-                {whyChooseUs.map((item, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    <CheckCircleIcon className="w-6 h-6 text-primary-600 mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold text-secondary-900">{item.title}</h4>
-                      <p className="text-secondary-600">{item.description}</p>
+            <div className="relative">
+              <img 
+                src={cybersecurityImage} 
+                alt="Cybersecurity & Compliance" 
+                className="w-full h-80 object-cover rounded-2xl shadow-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent rounded-2xl"></div>
+              
+              {/* Top overlay text */}
+              <div className="absolute top-6 left-6 text-white">
+                <div className="bg-primary-600/90 backdrop-blur-sm px-4 py-2 rounded-lg">
+                  <p className="text-sm font-semibold">🔒 Enterprise Security</p>
+                </div>
+              </div>
+              
+              {/* Center overlay text */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+                <div className="bg-black/60 backdrop-blur-sm px-6 py-4 rounded-xl">
+                  <h3 className="text-2xl font-bold mb-2">Why Choose Cybtex?</h3>
+                  <p className="text-primary-200 text-sm mb-4">Trusted Cybersecurity Partner</p>
+                </div>
+              </div>
+              
+              {/* Bottom content */}
+              <div className="absolute bottom-6 left-6 text-white">
+                <div className="space-y-3">
+                  {whyChooseUs.map((item, index) => (
+                    <div key={index} className="flex items-start space-x-3 bg-black/50 backdrop-blur-sm px-4 py-2 rounded-lg">
+                      <CheckCircleIcon className="w-5 h-5 text-primary-200 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-white">{item.title}</h4>
+                        <p className="text-primary-100 text-sm">{item.description}</p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -204,20 +240,35 @@ const Home: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className={`w-12 h-12 rounded-lg ${service.color} flex items-center justify-center mb-4`}>
-                  <service.icon className="w-6 h-6" />
+                <div className="h-48 overflow-hidden relative">
+                  <img 
+                    src={[techImage1, techImage2, techImage3, techImage4][index % 4]} 
+                    alt={service.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                  {/* Image overlay with service title */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h4 className="text-lg font-bold">{service.title}</h4>
+                    <div className="text-xs text-primary-200 opacity-90">Learn More →</div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold text-secondary-900 mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-secondary-600 mb-4">
-                  {service.description}
-                </p>
-                <Link to="/services" className="text-primary-600 font-medium hover:text-primary-700">
-                  Learn More →
-                </Link>
+                <div className="p-6">
+                  <div className={`w-12 h-12 rounded-lg ${service.color} flex items-center justify-center mb-4`}>
+                    <service.icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-secondary-900 mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-secondary-600 mb-4">
+                    {service.description}
+                  </p>
+                  <Link to="/services" className="text-primary-600 font-medium hover:text-primary-700">
+                    Learn More →
+                  </Link>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -225,12 +276,22 @@ const Home: React.FC = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
+      <section className="section-padding bg-white relative">
+        <div className="absolute inset-0 opacity-10">
+          <img 
+            src={techImage1} 
+            alt="Background Pattern" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="container-custom relative">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-secondary-900 mb-4">
               What Our Clients Say
             </h2>
+            <p className="text-lg text-secondary-600 max-w-2xl mx-auto">
+              Trusted by organizations across industries for our proven track record of success
+            </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (

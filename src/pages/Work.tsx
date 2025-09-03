@@ -10,22 +10,6 @@ const Work: React.FC = () => {
   const caseStudies = [
     {
       id: 1,
-      title: 'Federal Agency Cloud Migration',
-      industry: 'Government',
-      description: 'Successfully migrated a federal agency from legacy on-premises infrastructure to a secure Azure cloud environment.',
-      challenge: 'A federal agency needed to modernize their aging infrastructure while maintaining strict FISMA compliance requirements.',
-      solution: 'Implemented a hybrid cloud architecture with Azure Government, established zero-trust security framework, and automated compliance reporting.',
-      results: [
-        '40% reduction in infrastructure costs',
-        '99.9% uptime achieved',
-        'FISMA compliance maintained',
-        '50% faster deployment times'
-      ],
-      technologies: ['Azure Government', 'Azure AD', 'Azure Security Center', 'Power BI'],
-      image: '🏛️'
-    },
-    {
-      id: 2,
       title: 'Financial Services Security Overhaul',
       industry: 'Financial Services',
       description: 'Comprehensive cybersecurity transformation for a regional bank, implementing advanced threat detection and SOX compliance.',
@@ -41,7 +25,7 @@ const Work: React.FC = () => {
       image: '🏦'
     },
     {
-      id: 3,
+      id: 2,
       title: 'Healthcare System Modernization',
       industry: 'Healthcare',
       description: 'Complete IT modernization for a healthcare network, including HIPAA-compliant patient portal and clinical workflow optimization.',

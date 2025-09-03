@@ -10,10 +10,19 @@ import Work from './pages/Work';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
+// Banner component for leadership experience and client satisfaction
+const TopBanner = () => (
+  <div className="bg-primary-600 text-white py-2 px-4 text-center text-sm font-medium">
+    <span className="mr-6">Our leadership has over 20+ years of experience</span>
+    <span>Client satisfaction 95%</span>
+  </div>
+);
+
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-white">
+        <TopBanner />
         <Navbar />
         <main>
           <Routes>

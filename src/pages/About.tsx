@@ -91,7 +91,7 @@ const About: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-xl text-primary-100 mb-8 leading-relaxed"
             >
-              For over 20 years, we've been the trusted partner for organizations seeking to secure, 
+              We've been the trusted partner for organizations seeking to secure, 
               modernize, and optimize their IT infrastructure. Our mission is to deliver innovative 
               technology solutions that drive business success.
             </motion.p>
@@ -112,13 +112,11 @@ const About: React.FC = () => {
                 Our Story
               </h2>
               <p className="text-lg text-secondary-600 mb-6 leading-relaxed">
-                Founded in 2003, Cybtex Solutions began with a simple mission: to help organizations 
-                navigate the complex world of IT and cybersecurity. What started as a small consulting 
-                firm has grown into a comprehensive technology partner serving clients across government, 
-                healthcare, finance, and beyond.
+                Cybtex Solutions began with a simple mission: to help organizations 
+                navigate the complex world of IT and cybersecurity. Let our business help your business do big business government, healthcare, finance, and beyond.
               </p>
               <p className="text-lg text-secondary-600 mb-6 leading-relaxed">
-                Today, we're proud to have delivered over 500 successful projects, maintained a 99% 
+                Today, we're proud to have delivered over 185 successful projects, maintained a 95% 
                 client satisfaction rate, and built lasting partnerships with organizations of all sizes. 
                 Our team of certified experts brings decades of combined experience in enterprise IT, 
                 cybersecurity, and digital transformation.
@@ -129,7 +127,7 @@ const About: React.FC = () => {
                   <div className="text-secondary-900 font-semibold">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-600 mb-2">500+</div>
+                  <div className="text-3xl font-bold text-primary-600 mb-2">185+</div>
                   <div className="text-secondary-900 font-semibold">Projects Delivered</div>
                 </div>
               </div>
