@@ -12,7 +12,7 @@ import {
   CheckCircleIcon,
   PlayIcon
 } from '@heroicons/react/24/outline';
-import heroBg from '../assets/High-Tech Cybersecurity Office Scene.png';
+import heroBg from '../assets/hero-bg.svg';
 import cybersecurityImage from '../assets/Cybersecurity & Compliance Design.png';
 import techImage1 from '../assets/ChatGPT Image Aug 23, 2025, 02_54_12 PM.png';
 import techImage2 from '../assets/ChatGPT Image Aug 23, 2025, 02_57_13 PM.png';
